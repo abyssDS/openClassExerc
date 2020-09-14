@@ -1,0 +1,68 @@
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git status
+On branch master
+nothing to commit, working directory clean
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git push --all
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git remote add openClassExerc https://github.com/abyssDS/openClassExerc.git
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git push openClassExerc
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream openClassExerc master
+
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git push --set-upstream openClassExerc master
+Username for 'https://github.com': abyssDS
+Password for 'https://abyssDS@github.com': 
+To https://github.com/abyssDS/openClassExerc.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/abyssDS/openClassExerc.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git push --set-upstream openClassExerc branch
+error: src refspec branch does not match any.
+error: failed to push some refs to 'https://github.com/abyssDS/openClassExerc.git'
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git pull openClassExerc
+warning: no common commits
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/abyssDS/openClassExerc
+ * [new branch]      master     -> openClassExerc/master
+You asked to pull from the remote 'openClassExerc', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git pull openClassExerc master
+From https://github.com/abyssDS/openClassExerc
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md      |  5 +++++
+ formulaire.php | 17 +++++++++++++++++
+ secret.php     | 24 ++++++++++++++++++++++++
+ 3 files changed, 46 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 formulaire.php
+ create mode 100644 secret.php
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git status
+On branch master
+nothing to commit, working directory clean
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ ls
+formulaire.php    OpenClassroom_Python_OPP  secret.php
+Openclassroom_CV  README.md
+>>>>> andolandy@abyssDS: <<<<<~/Github_file/openClassExerc$ git
+
